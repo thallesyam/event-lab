@@ -15,7 +15,7 @@ const GET_LESSON_BY_SLUG_QUERY = gql`
       videoId
       description
       teacher {
-        bio
+        biog
         avatarURL
         name
       }
