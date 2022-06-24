@@ -10,6 +10,7 @@ type Params = {
 function Event() {
   const { slug } = useParams<Params>() 
 
+
   return (
     <section className="flex flex-col min-h-screen">
       <Header />

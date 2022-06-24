@@ -15,7 +15,7 @@ const GET_LESSON_BY_SLUG_QUERY = gql`
       videoId
       description
       teacher {
-        biog
+        bio
         avatarURL
         name
       }
@@ -42,6 +42,9 @@ export function Video({ lessonSlug }: Props) {
       slug: lessonSlug
     }
   })
+
+  console.log(data)
+
 
   if (!data) {
     return (
